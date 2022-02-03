@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>For loop in Flask</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h1>
+            Terry's favorite TV shows are:
+            <ol>
+                {%for i in range (0, len)%}
+                    <li>{{Shows[i]}}</li>
+                    {% if Shows[i] == 'South Park'%}
+                        <mark color="green">South Park</mark>
+                    {%endif%}
+                {%endfor%}
+            </ol>
+        </h1>
+        
+    </body>
+
+</html>
